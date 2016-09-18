@@ -1,12 +1,12 @@
+import Heading from 'src/components/Heading'
 import Vue from 'vue'
-import Hello from 'src/components/Hello'
 
-describe('Hello.vue', () => {
+describe('Heading.vue', () => {
   it('should render correct contents', () => {
     const vm = new Vue({
-      template: '<div><hello></hello></div>',
-      components: { Hello }
+      template: '<div><heading></heading></div>',
+      components: { Heading }
     }).$mount()
-    expect(vm.$el.querySelector('.hello h1').textContent).to.contain('Hello World!')
+    expect(vm.$el.querySelector('.heading h1').textContent).to.contain('Welcome to the party.')
   })
 })

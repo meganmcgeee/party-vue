@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <img class="logo" src="./assets/cocktails.jpg">
-    <hello></hello>
-    <p>
-      Welcome to your Vue.js app!
-    </p>
+  <img class="logo" src="./assets/cocktails.jpg">
+  <heading></heading>
+  <instructions></instructions>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Heading from './components/Heading'
+import Instructions from './components/Instructions'
 
 export default {
   components: {
-    Hello
+    Heading,
+    Instructions
   }
 }
 </script>
