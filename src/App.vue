@@ -23,8 +23,8 @@ body {
   font-family: 'Pontano Sans', sans-serif;
   display: flex;
   background-color: #f07aa1;
-  align-items: center;
-  justify-content: center;
+  /*align-items: center;
+  justify-content: center;*/
   height: 100%;
 }
 

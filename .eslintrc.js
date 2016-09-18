@@ -9,6 +9,9 @@ module.exports = {
   extends: [
     'airbnb-base',
   ],
+  env: {
+    browser: true,
+  },
   parserOptions: {
     ecmaVersion: 7,
     sourceType: 'module',
@@ -21,12 +24,11 @@ module.exports = {
     'better/no-whiles': 2,
     'fp/no-arguments': 2,
     'fp/no-mutating-assign': 2,
-    'fp/no-mutation': [2, {
-      exceptions: [
-        { property: 'propTypes' },
-        { object: 'Tasks' },
-      ]
-    }],
+    // 'fp/no-mutation': [2, {
+    //   exceptions: [
+    //     { property: 'propTypes' },
+    //     { object: 'Tasks' },
+      // ]
     'import/no-extraneous-dependencies': 0,
     'max-len': 0,
     'no-console': 0,
