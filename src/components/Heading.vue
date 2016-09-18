@@ -22,5 +22,7 @@ export default {
 <style scoped>
 h1 {
   color: gold;
+  font-family: 'Bungee Shade', cursive;
+  font-size: 40px;
 }
 </style>

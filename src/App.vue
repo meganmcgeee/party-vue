@@ -1,10 +1,13 @@
 <template>
   <div id="app">
-    <ul class="nav navbar-nav">
-      <li><a v-link="{ path: '/' }">Home</a></li>
-      <li><a v-link="{ path: '/heading' }">Heading</a></li>
-      <li><a v-link="{ path: '/instructions' }">Instructions</a></li>
-    </ul>
+    <heading></heading>
+    <p>
+      <a v-link="{ path: '/' }">Home</a>
+      <a v-link="{ path: '/heading' }">Greetings</a>
+      <a v-link="{ path: '/instructions' }">Instructions</a>
+      <a v-link="{ path: '/partyfavors' }">Party Favors</a>
+    </p>
+
   <img class="logo" src="./assets/cocktails.jpg">
   <router-view></router-view>
 </template>
@@ -19,7 +22,9 @@ html {
 }
 
 body {
+  font-family: 'Pontano Sans', sans-serif;
   display: flex;
+  background-color: #f07aa1;
   align-items: center;
   justify-content: center;
   height: 100%;
@@ -34,8 +39,10 @@ body {
 }
 
 #app a {
-  color: #42b983;
+  color: #000;
   text-decoration: none;
+  padding: 10px;
+  font-family: 'Pontano Sans', sans-serif;
 }
 
 .logo {
