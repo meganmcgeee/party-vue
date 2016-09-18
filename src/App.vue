@@ -1,21 +1,14 @@
 <template>
   <div id="app">
+    <ul class="nav navbar-nav">
+      <li><a v-link="{ path: '/' }">Dashboard</a></li>
+      <li><a v-link="{ path: '/about' }">About</a></li>
+      <li><a v-link="{ path: '/contact' }">Contact</a></li>
+      <li><a v-link="{ path: '/404' }">404</a></li>
+    </ul>
   <img class="logo" src="./assets/cocktails.jpg">
-  <heading></heading>
-  <instructions></instructions>
+  <router-view></router-view>
 </template>
-
-<script>
-import Heading from './components/Heading'
-import Instructions from './components/Instructions'
-
-export default {
-  components: {
-    Heading,
-    Instructions
-  }
-}
-</script>
 
 <style>
 html {
