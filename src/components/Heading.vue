@@ -12,10 +12,10 @@ export default {
       // with hot-reload because the reloaded component
       // preserves its current state and we are modifying
       // its initial state.
-      greeting: 'Welcome to the party.'
-    }
-  }
-}
+      greeting: 'Welcome to the party.',
+    };
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

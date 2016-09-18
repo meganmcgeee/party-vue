@@ -1,14 +1,17 @@
 <template>
   <div id="app">
     <ul class="nav navbar-nav">
-      <li><a v-link="{ path: '/' }">Dashboard</a></li>
-      <li><a v-link="{ path: '/about' }">About</a></li>
-      <li><a v-link="{ path: '/contact' }">Contact</a></li>
-      <li><a v-link="{ path: '/404' }">404</a></li>
+      <li><a v-link="{ path: '/' }">Home</a></li>
+      <li><a v-link="{ path: '/heading' }">Heading</a></li>
+      <li><a v-link="{ path: '/instructions' }">Instructions</a></li>
     </ul>
   <img class="logo" src="./assets/cocktails.jpg">
   <router-view></router-view>
 </template>
+
+<script>
+export default {};
+</script>
 
 <style>
 html {
