@@ -2,23 +2,19 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 
 import App from './App.vue';
-import Heading from './components/Heading.vue';
-import Instructions from './components/Instructions.vue';
-import PartyFavors from './components/PartyFavors.vue';
+import EventList from './components/EventList.vue';
+import RulesList from './components/RulesList.vue';
 
 Vue.use(VueRouter);
 
 const router = new VueRouter();
 
 router.map({
-  '/heading': {
-    component: Heading,
+  '/rules': {
+    component: RulesList,
   },
-  '/instructions': {
-    component: Instructions,
-  },
-  '/partyfavors': {
-    component: PartyFavors,
+  '/events': {
+    component: EventList,
   },
 });
 

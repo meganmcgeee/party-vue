@@ -1,11 +1,9 @@
 <template>
   <div id="app">
-    <heading></heading>
     <p>
-      <a v-link="{ path: '/' }">Home</a>
-      <a v-link="{ path: '/heading' }">Greetings</a>
-      <a v-link="{ path: '/instructions' }">Instructions</a>
-      <a v-link="{ path: '/partyfavors' }">Party Favors</a>
+      <a v-link="{ path: '/' }">The Party</a>
+      <a v-link="{ path: '/rules' }">Rules</a>
+      <a v-link="{ path: '/events' }">Events</a>
     </p>
 
   <img class="logo" src="./assets/cocktails.jpg">
@@ -32,7 +30,6 @@ body {
 
 #app {
   color: #2c3e50;
-  margin-top: -100px;
   max-width: 600px;
   font-family: Source Sans Pro, Helvetica, sans-serif;
   text-align: center;

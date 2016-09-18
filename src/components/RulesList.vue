@@ -1,6 +1,6 @@
 <template>
-  <div class="instructions">
-    <p>{{ howto }}</p>
+  <div class="Rules">
+    <p>{{ rulelist }}</p>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ export default {
       // with hot-reload because the reloaded component
       // preserves its current state and we are modifying
       // its initial state.
-      howto: 'We are so very pleased that you could join us. Please leave all weapons at the door. This is a gat-free celebration.',
+      rulelist: 'Please leave all weapons at the door. This is a gat-free celebration.',
     };
   },
 };
