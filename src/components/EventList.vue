@@ -24,14 +24,14 @@
       <div class="col-sm-12">
         <div class="panel panel-default">
           <div class="panel-heading">
-            <p>Add an Event</p>
+            <p>Add A Supper</p>
           </div>
           <div class="panel-body">
             <!--  Form-->
             <div class="form-group">
-              <input class="form-control" placeholder="Event Name" v-model="event.name">
+              <input class="form-control" placeholder=" Name" v-model="event.name">
             </div>
-
+            <br>
             <div class="form-group">
               <textarea class="form-control" placeholder="Event Description" v-model="event.description"></textarea>
             </div>
@@ -39,7 +39,7 @@
             <div class="form-group">
               <input type="date" class="form-control" placeholder="Date" v-model="event.date">
             </div>
-
+              <br>
             <button class="btn btn-primary" v-on:click="addEvent">Submit</button>
           </div>
 
@@ -79,11 +79,11 @@
         // We dedicate a method to retrieving and setting some data
       fetchEvents() {
         const events = [{
-        //   id: 1,
-        //   name: 'TIFF',
-        //   description: 'Toronto International Film Festival',
-        //   date: '2015-09-10',
-        // }, {
+          id: 1,
+          name: 'LF&Dye Craft Jam',
+          description: 'Live Free&Dye Craft Jam is a quarterly celebration of local crafters and makers, hosted by LF&D, a dyed goods and jewlery store with a social purpose. Our Craft jams host a variety of craft workshops by local artisans. Our first Jam is right before the start of the holiday season so you will walk away with one-of-a-kind handmade creations that will wow your friends & family.',
+          date: '2016-20-11',
+        },
         //   id: 2,
         //   name: 'The Martian Premiere',
         //   description: 'The Martian comes to theatres.',
@@ -93,7 +93,7 @@
         //   name: 'SXSW',
         //   description: 'Music, film and interactive festival in Austin, TX.',
         //   date: '2016-03-11',
-        }];
+        ];
             // $set is a convenience method provided by Vue that is similar to pushing
             // data onto an array
         this.$set('events', events);

@@ -1,12 +1,10 @@
 <template>
   <div id="app">
     <p>
-      <a v-link="{ path: '/' }">The Party</a>
+      <a v-link="{ path: '/' }">Jam</a>
       <a v-link="{ path: '/rules' }">Rules</a>
       <a v-link="{ path: '/events' }">Events</a>
     </p>
-
-  <img class="logo" src="./assets/cocktails.jpg">
   <router-view></router-view>
 </template>
 
@@ -21,18 +19,17 @@ html {
 
 body {
   font-family: 'Pontano Sans', sans-serif;
-  display: flex;
   background-color: #f07aa1;
   /*align-items: center;
   justify-content: center;*/
-  height: 100%;
+  background-image: url('assets/lfndbg.jpg');
 }
 
 #app {
   color: #2c3e50;
   max-width: 600px;
   font-family: Source Sans Pro, Helvetica, sans-serif;
-  text-align: center;
+  /*text-align: center;*/
 }
 
 #app a {
